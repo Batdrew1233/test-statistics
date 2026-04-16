@@ -13,7 +13,7 @@ public class TestStatistics {
             sum += testScore;
 
         }
-        System.out.println("The Average is " + sum/ testScores.length + "%");
+        System.out.println("The Average: " + sum/ testScores.length + "%");
 
         //Calculate High Score
         int highest = testScores[0];
@@ -23,6 +23,16 @@ public class TestStatistics {
         }
         // Print out highest score
         System.out.println("Highest Score: " + highest);
+
+        //Calculate Lowest Score
+        int lowest = testScores[0];
+        for (int score : testScores){
+            if (score < lowest)
+                lowest = score;
+        }
+
+        //Print out lowest score
+        System.out.println("Lowest Score: " + lowest);
 
 
 
