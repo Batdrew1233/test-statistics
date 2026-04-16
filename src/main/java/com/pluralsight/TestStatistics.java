@@ -3,7 +3,7 @@ package com.pluralsight;
 public class TestStatistics {
     public static void main(String[] args) {
         //Test Score Array
-        int[] testScores = {90, 65, 84, 71, 96, 74 };
+        int[] testScores = {90, 65, 84, 71, 96, 74, 57, 68, 98, 88};
 
         //variable to keep track of sum
         int sum = 0;
@@ -14,5 +14,7 @@ public class TestStatistics {
 
         }
         System.out.println("The Average is " + sum/ testScores.length + "%");
+
+        //Calculate High Score
     }
 }
