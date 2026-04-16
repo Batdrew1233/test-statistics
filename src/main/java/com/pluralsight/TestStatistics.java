@@ -16,5 +16,15 @@ public class TestStatistics {
         System.out.println("The Average is " + sum/ testScores.length + "%");
 
         //Calculate High Score
+        int highest = testScores[0];
+        for (int score : testScores){
+            if(score > highest)
+                highest = score;
+        }
+        // Print out highest score
+        System.out.println("Highest Score: " + highest);
+
+
+
     }
 }
